@@ -3,6 +3,24 @@ const sidebar = document.getElementById('sidebar');
 const sidebarOverlay = document.getElementById('sidebarOverlay');
 const navLinks = document.querySelectorAll('.nav-link');
 
+function applyBasicImageProtection() {
+  document.querySelectorAll('img').forEach((img) => {
+    img.setAttribute('draggable', 'false');
+    img.addEventListener('dragstart', (event) => {
+      event.preventDefault();
+    });
+  });
+
+  document.addEventListener('contextmenu', (event) => {
+    const target = event.target;
+    if (target instanceof HTMLElement && target.closest('img')) {
+      event.preventDefault();
+    }
+  });
+}
+
+applyBasicImageProtection();
+
 function setSidebarOpen(isOpen) {
   if (!sidebar || !menuToggle) {
     return;
