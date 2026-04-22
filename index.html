@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <title>Portfólio Hugvo</title>
+  <!-- Preconnect to YouTube early so API + video load faster -->
+  <link rel="preconnect" href="https://www.youtube.com" crossorigin />
+  <link rel="preconnect" href="https://i.ytimg.com" crossorigin />
+  <link rel="preconnect" href="https://www.youtube-nocookie.com" crossorigin />
+  <link rel="dns-prefetch" href="https://api.allorigins.win" />
+  <link rel="stylesheet" href="styles.css?v=20260420-basecss" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="pixel-bg">
+    <div class="pixel-dot pixel-1"></div>
+    <div class="pixel-dot pixel-2"></div>
+    <div class="pixel-dot pixel-3"></div>
+    <div class="pixel-dot pixel-4"></div>
+    <div class="pixel-dot pixel-5"></div>
+    <div class="pixel-dot pixel-6"></div>
+    <div class="pixel-dot pixel-7"></div>
+    <div class="pixel-dot pixel-8"></div>
+    <div class="pixel-dot pixel-9"></div>
+    <div class="pixel-dot pixel-10"></div>
+    <div class="pixel-dot pixel-11"></div>
+    <div class="pixel-dot pixel-12"></div>
+    <div class="pixel-dot pixel-13"></div>
+    <div class="pixel-dot pixel-14"></div>
+    <div class="pixel-dot pixel-15"></div>
+    <div class="pixel-dot pixel-16"></div>
+    <div class="pixel-dot pixel-17"></div>
+    <div class="pixel-dot pixel-18"></div>
+    <div class="pixel-dot pixel-19"></div>
+    <div class="pixel-dot pixel-20"></div>
+    <div class="pixel-dot pixel-21"></div>
+    <div class="pixel-dot pixel-22"></div>
+    <div class="pixel-dot pixel-23"></div>
+    <div class="pixel-dot pixel-24"></div>
+    <div class="pixel-dot pixel-25"></div>
+  </div>
+  <div class="page-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <span class="brand-mark">P</span>
+        <div>
+          <p class="brand-label">Pixel Portfolio</p>
+          <p class="brand-subtitle" data-i18n="brandSubtitle">Pixel Art Elegante</p>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="#home" class="nav-link active" data-i18n="navHome">Início</a>
+        <a href="#outfits" class="nav-link" data-i18n="navOutfits">Outfits</a>
+        <a href="#items" class="nav-link" data-i18n="navItems">Items</a>
+        <a href="#monsters" class="nav-link" data-i18n="navMonsters">Monsters</a>
+        <a href="#packs" class="nav-link" data-i18n="navPacks">Packs</a>
+        <a href="#decorations" class="nav-link" data-i18n="navDecorations">Decorations</a>
+        <a href="#contact" class="nav-link" data-i18n="navContact">Contato</a>
+      </nav>
+    </aside>
+    <button class="sidebar-overlay" id="sidebarOverlay" type="button" aria-label="Fechar menu"></button>
+
+    <div class="main-panel">
+      <header class="topbar">
+        <div class="header-title">
+          <img class="header-logo" src="logos/logohugvo.gif" alt="Logo Hugvo">
+          <!-- <p>Apresentação moderna e minimalista.</p> -->
+        </div>
+
+        <div class="topbar-actions">
+          <div class="lang-switcher">
+            <button id="langToggle" class="lang-btn" aria-label="Alternar idioma">
+              <img src="images/br.png" alt="Portuguese" class="lang-flag" />
+            </button>
+          </div>
+
+          <nav class="topnav">
+            <a href="#home" class="topnav-item">
+              <img src="images/home-img.gif" alt="" class="nav-icon nav-icon-home" aria-hidden="true" />
+              <span data-i18n="topHome">Início</span>
+            </a>
+            <div class="dropdown-group">
+              <button type="button" class="dropdown-trigger">
+                <img src="images/portfolio-img.gif" alt="" class="nav-icon" aria-hidden="true" />
+                <span data-i18n="topPortfolio">Portfólio</span>
+              </button>
+              <div class="dropdown-menu">
+                <a href="#outfits" class="dropdown-link" data-section="outfits">
+                  <img src="images/outfits-img.gif" alt="" class="dropdown-icon" aria-hidden="true" />
+                  <span>Outfits</span>
+                </a>
+                <a href="#monsters" class="dropdown-link" data-section="monsters">
+                  <img src="images/monster-img.gif" alt="" class="dropdown-icon" aria-hidden="true" />
+                  <span>Monsters</span>
+                </a>
+                <a href="#items" class="dropdown-link" data-section="items">
+                  <img src="images/items-img.gif" alt="" class="dropdown-icon" aria-hidden="true" />
+                  <span>Items</span>
+                </a>
+                <a href="#packs" class="dropdown-link" data-section="packs">
+                  <img src="images/packs-img.gif" alt="" class="dropdown-icon" aria-hidden="true" />
+                  <span>Packs</span>
+                </a>
+                <a href="#decorations" class="dropdown-link" data-section="decorations">
+                  <img src="images/decorations-img.gif" alt="" class="dropdown-icon" aria-hidden="true" />
+                  <span>Decorations</span>
+                </a>
+              </div>
+            </div>
+            <a href="#contact" class="topnav-item topnav-cta">
+              <img src="images/contact-img.gif" alt="" class="nav-icon" aria-hidden="true" />
+              <span data-i18n="topContact">Contato</span>
+            </a>
+          </nav>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="sidebar" data-i18n-aria-label="menuOpenAria">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </header>
+
+      <main>
+        <section class="hero" id="home">
+          <div class="hero-copy">
+            <h2 class="hero-title" data-i18n="heroTitle">PORTFOLIO</h2>
+            <div class="hero-identity">
+              <div class="subn-row">
+                <div class="hero-name-block">
+                  <h1 class="hero-name">HUGV<span class="hero-name-glow">O</span></h1>
+                  <p class="eyebrow">Pixel artist</p>
+                </div>
+                <img src="images/goblin_blue.gif" alt="HUGVO animation" class="hero-gif" />
+              </div>
+            </div>
+            <p class="hero-description" data-i18n="heroDescription">Artista profissional de Pixel Art, atuante em diversos estilos, com maior experiência em arte isométrica.</p>
+            <div class="hero-benefits" aria-label="Diferenciais" data-i18n-aria-label="heroBenefitsAria">
+              <article class="hero-benefit-card">
+                <span class="hero-benefit-icon" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.2 7.2L5.5 10.3L11.8 3.8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                <p data-i18n="heroBenefit1">Criação de sprites para todas versões</p>
+              </article>
+              <article class="hero-benefit-card">
+                <span class="hero-benefit-icon" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.2 7.2L5.5 10.3L11.8 3.8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                <p data-i18n="heroBenefit2">Conteudo pronta entrega</p>
+              </article>
+              <article class="hero-benefit-card">
+                <span class="hero-benefit-icon" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.2 7.2L5.5 10.3L11.8 3.8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                <p data-i18n="heroBenefit3">Conteudo 100% exclusivo</p>
+              </article>
+            </div>
+            <div class="hero-actions">
+              <a href="#outfits" class="btn2" data-i18n="heroButton">Ver trabalhos</a>
+              <button
+                class="btn2 btn2-course"
+                type="button"
+                data-i18n-tooltip="heroCourseSoon"
+                data-tooltip="Não disponível no momento"
+                aria-disabled="true"
+              >
+                <img src="images/lock-icon.svg" alt="" aria-hidden="true" class="btn2-course-icon" />
+                <span data-i18n="heroCourse">Curso</span>
+              </button>
+            </div>
+          </div>
+          <div class="hero-panel">
+            <div class="hero-card">
+              <img src="images/home-sec-img.gif" alt="Ilustracao da seção inicial" class="hero-side-image" />
+            </div>
+          </div>
+        </section>
+
+        <section class="section carousel-section" id="partners">
+          <div class="carousel-header">
+            <h3 class="carousel-title" data-i18n="carouselTitle">Servidores atendidos</h3>
+            <img src="images/server-worked.gif" alt="" aria-hidden="true" class="carousel-title-art" />
+          </div>
+          <div class="brand-carousel">
+            <div class="carousel-track">
+              <img src="logos/blacktalon.png" alt="Black Talon" class="brand-img" />
+              <img src="logos/blazera.png" alt="Blazera" class="brand-img" />
+              <img src="logos/empearl.png" alt="Empearl" class="brand-img" />
+              <img src="logos/eternalodyssey.png" alt="Eternal Odyssey" class="brand-img" />
+              <img src="logos/exordion.webp" alt="Exordion" class="brand-img" />
+              <img src="logos/logogrimot.png" alt="Logo Grimot" class="brand-img" />
+              <img src="logos/luminaris.png" alt="Luminaris" class="brand-img" />
+              <img src="logos/mazeot.gif" alt="Mazeot" class="brand-img" />
+              <img src="logos/miracle.png" alt="Miracle" class="brand-img" />
+              <img src="logos/oldheart.png" alt="Old Heart" class="brand-img" />
+              <img src="logos/olimpiaot.png" alt="Olimpia OT" class="brand-img" />
+              <img src="logos/paulistinha.png" alt="Paulistinha" class="brand-img brand-img-large" />
+              <img src="logos/rivalia.png" alt="Rivalia" class="brand-img" />
+              <img src="logos/tyron.webp" alt="Tyron" class="brand-img" />
+              <img src="logos/vanyria.gif" alt="Vanyria" class="brand-img" />
+              <img src="logos/blacktalon.png" alt="Black Talon" class="brand-img" />
+              <img src="logos/blazera.png" alt="Blazera" class="brand-img" />
+              <img src="logos/empearl.png" alt="Empearl" class="brand-img" />
+              <img src="logos/eternalodyssey.png" alt="Eternal Odyssey" class="brand-img" />
+              <img src="logos/exordion.webp" alt="Exordion" class="brand-img" />
+              <img src="logos/logogrimot.png" alt="Logo Grimot" class="brand-img" />
+              <img src="logos/luminaris.png" alt="Luminaris" class="brand-img" />
+              <img src="logos/mazeot.gif" alt="Mazeot" class="brand-img" />
+              <img src="logos/miracle.png" alt="Miracle" class="brand-img" />
+              <img src="logos/oldheart.png" alt="Old Heart" class="brand-img" />
+              <img src="logos/olimpiaot.png" alt="Olimpia OT" class="brand-img" />
+              <img src="logos/paulistinha.png" alt="Paulistinha" class="brand-img brand-img-large" />
+              <img src="logos/rivalia.png" alt="Rivalia" class="brand-img" />
+              <img src="logos/tyron.webp" alt="Tyron" class="brand-img" />
+              <img src="logos/vanyria.gif" alt="Vanyria" class="brand-img" />
+              <img src="logos/blacktalon.png" alt="Black Talon" class="brand-img" />
+              <img src="logos/blazera.png" alt="Blazera" class="brand-img" />
+              <img src="logos/empearl.png" alt="Empearl" class="brand-img" />
+              <img src="logos/eternalodyssey.png" alt="Eternal Odyssey" class="brand-img" />
+              <img src="logos/exordion.webp" alt="Exordion" class="brand-img" />
+              <img src="logos/logogrimot.png" alt="Logo Grimot" class="brand-img" />
+              <img src="logos/luminaris.png" alt="Luminaris" class="brand-img" />
+              <img src="logos/mazeot.gif" alt="Mazeot" class="brand-img" />
+              <img src="logos/miracle.png" alt="Miracle" class="brand-img" />
+              <img src="logos/oldheart.png" alt="Old Heart" class="brand-img" />
+              <img src="logos/olimpiaot.png" alt="Olimpia OT" class="brand-img" />
+              <img src="logos/paulistinha.png" alt="Paulistinha" class="brand-img brand-img-large" />
+              <img src="logos/rivalia.png" alt="Rivalia" class="brand-img" />
+              <img src="logos/tyron.webp" alt="Tyron" class="brand-img" />
+              <img src="logos/vanyria.gif" alt="Vanyria" class="brand-img" />
+              <img src="logos/blacktalon.png" alt="Black Talon" class="brand-img" />
+              <img src="logos/blazera.png" alt="Blazera" class="brand-img" />
+              <img src="logos/empearl.png" alt="Empearl" class="brand-img" />
+              <img src="logos/eternalodyssey.png" alt="Eternal Odyssey" class="brand-img" />
+              <img src="logos/exordion.webp" alt="Exordion" class="brand-img" />
+              <img src="logos/logogrimot.png" alt="Logo Grimot" class="brand-img" />
+              <img src="logos/luminaris.png" alt="Luminaris" class="brand-img" />
+              <img src="logos/mazeot.gif" alt="Mazeot" class="brand-img" />
+              <img src="logos/miracle.png" alt="Miracle" class="brand-img" />
+              <img src="logos/oldheart.png" alt="Old Heart" class="brand-img" />
+              <img src="logos/olimpiaot.png" alt="Olimpia OT" class="brand-img" />
+              <img src="logos/paulistinha.png" alt="Paulistinha" class="brand-img brand-img-large" />
+              <img src="logos/rivalia.png" alt="Rivalia" class="brand-img" />
+              <img src="logos/tyron.webp" alt="Tyron" class="brand-img" />
+              <img src="logos/vanyria.gif" alt="Vanyria" class="brand-img" />
+            </div>
+          </div>
+        </section>
+
+        <section class="section portfolio-panel" id="portfolio">
+          <div class="portfolio-title-image-wrap" aria-hidden="true">
+            <img src="images/portfolio-banner.gif" alt="" class="portfolio-title-image" />
+          </div>
+          <div class="panel-header">
+            <button class="panel-tab active" data-category="outfits">
+              <img src="images/outfits-img.gif" alt="" class="tab-icon" aria-hidden="true" />
+              Outfits
+            </button>
+            <button class="panel-tab" data-category="monsters">
+              <img src="images/monster-img.gif" alt="" class="tab-icon" aria-hidden="true" />
+              Monsters
+            </button>
+            <button class="panel-tab" data-category="items">
+              <img src="images/items-img.gif" alt="" class="tab-icon" aria-hidden="true" />
+              Items
+            </button>
+            <button class="panel-tab" data-category="packs">
+              <img src="images/packs-img.gif" alt="" class="tab-icon" aria-hidden="true" />
+              Packs
+            </button>
+            <button class="panel-tab" data-category="decorations">
+              <img src="images/decorations-img.gif" alt="" class="tab-icon" aria-hidden="true" />
+              Decorations
+            </button>
+          </div>
+          <div class="panel-content">
+            <div id="outfits" class="section-anchor"></div>
+            <div class="panel-grid" id="outfits-panel">
+              <article class="video-card"><video controls muted loop playsinline><source src="1.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="2.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="3.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="4.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="5.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="6.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="7.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="8.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="9.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="10.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="11.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="12.mp4" type="video/mp4" /></video></article>
+            </div>
+            <div id="monsters" class="section-anchor"></div>
+            <div class="panel-grid hidden" id="monsters-panel">
+              <article class="video-card"><video controls muted loop playsinline><source src="monster1.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="monster2.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="monster3.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="monster4.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="monster5.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="monster6.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="monster7.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="monster8.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="monster9.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="monster10.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="monster11.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="monster12.mp4" type="video/mp4" /></video></article>
+            </div>
+            <div id="items" class="section-anchor"></div>
+            <div class="panel-grid hidden" id="items-panel">
+              <article class="video-card"><video controls muted loop playsinline><source src="item1.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="item2.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="item3.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="item4.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="item5.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="item6.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="item7.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="item8.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="item9.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="item10.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="item11.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="item12.mp4" type="video/mp4" /></video></article>
+            </div>
+            <div id="packs" class="section-anchor"></div>
+            <div class="panel-grid hidden" id="packs-panel">
+              <article class="video-card"><video controls muted loop playsinline><source src="decoration1.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="decoration2.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="decoration3.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="decoration4.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="decoration5.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="decoration6.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="decoration7.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="decoration8.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="decoration9.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="decoration10.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="decoration11.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="decoration12.mp4" type="video/mp4" /></video></article>
+            </div>
+            <div id="decorations" class="section-anchor"></div>
+            <div class="panel-grid hidden" id="decorations-panel">
+              <article class="video-card"><video controls muted loop playsinline><source src="decoration1.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="decoration2.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="decoration3.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="decoration4.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="decoration5.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="decoration6.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="decoration7.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="decoration8.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="decoration9.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="decoration10.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="decoration11.mp4" type="video/mp4" /></video></article>
+              <article class="video-card"><video controls muted loop playsinline><source src="decoration12.mp4" type="video/mp4" /></video></article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section testimonials-section" id="feedbacks">
+          <div class="section-header testimonials-header">
+            <p class="section-label" data-i18n="testimonialsLabel">Feedbacks</p>
+            <div class="section-title-row">
+              <h3 class="testimonials-title" data-i18n="testimonialsTitle">O Que Dizem os Donos de Servidor</h3>
+              <img src="images/feedbacks-icon.gif" alt="" aria-hidden="true" class="section-title-art testimonials-title-art" />
+            </div>
+            <p class="testimonials-subtitle" data-i18n="testimonialsSubtitle">Comunidade confiante no nosso trabalho</p>
+          </div>
+
+          <div class="testimonials-slider" data-testimonials-slider>
+            <button class="testimonials-nav testimonials-prev" type="button" data-testimonials-prev aria-label="Anterior" data-i18n-aria-label="testimonialsPrevAria">
+              <span aria-hidden="true">&#10094;</span>
+            </button>
+
+            <div class="testimonials-viewport" aria-live="polite">
+              <div class="testimonials-track" data-testimonials-track>
+                <article class="testimonial-card">
+                  <p class="testimonial-quote" data-i18n="testimonialQuote1">&quot;Meu pedido foi feito num piscar de olhos. Ele ouve o que você quer e usa sua criatividade para criar algo verdadeiramente incrível. Recomendo o Hugvo 100%!&quot;</p>
+                  <div class="testimonial-meta">
+                    <div class="testimonial-avatar" aria-hidden="true">
+                      <img src="images/discord-imgs/optimum.webp" alt="Optimum">
+                    </div>
+                    <div class="testimonial-author">
+                      <p class="testimonial-name" data-i18n="testimonialName1">Optimum</p>
+                      <p class="testimonial-role" data-i18n="testimonialRole1">Vanyria</p>
+                    </div>
+                    <span class="testimonial-badge" data-i18n="testimonialVerified">Verificado</span>
+                  </div>
+                </article>
+
+                <article class="testimonial-card">
+                  <p class="testimonial-quote" data-i18n="testimonialQuote2">&quot;Profissional competente e dedicado! Recomendo muito! Preço justo, serviço honesto e rápido.&quot;</p>
+                  <div class="testimonial-meta">
+                    <div class="testimonial-avatar" aria-hidden="true">
+                      <img src="images/discord-imgs/dohkoh.webp" alt="Dohko">
+                    </div>
+                    <div class="testimonial-author">
+                      <p class="testimonial-name" data-i18n="testimonialName2">Dohko</p>
+                      <p class="testimonial-role" data-i18n="testimonialRole2">OlimpiaOT</p>
+                    </div>
+                    <span class="testimonial-badge" data-i18n="testimonialVerified">Verificado</span>
+                  </div>
+                </article>
+
+                <article class="testimonial-card">
+                  <p class="testimonial-quote" data-i18n="testimonialQuote3">&quot;Cara gente boa, preço justo, trabalho rápido e estiloso! Recomendo o Hugo para quem quer elevar o nível visual do seu servidor.&quot;</p>
+                  <div class="testimonial-meta">
+                    <div class="testimonial-avatar" aria-hidden="true">
+                      <img src="images/discord-imgs/mythh.webp" alt="Mythh">
+                    </div>
+                    <div class="testimonial-author">
+                      <p class="testimonial-name" data-i18n="testimonialName3">Mythh</p>
+                      <p class="testimonial-role" data-i18n="testimonialRole3">Oldheart</p>
+                    </div>
+                    <span class="testimonial-badge" data-i18n="testimonialVerified">Verificado</span>
+                  </div>
+                </article>
+
+                <article class="testimonial-card">
+                  <p class="testimonial-quote" data-i18n="testimonialQuote4">&quot;Hugvo é uma pessoa muito genuína, talentosa e trabalhadora ^^&quot;</p>
+                  <div class="testimonial-meta">
+                    <div class="testimonial-avatar" aria-hidden="true">
+                      <img src="images/discord-imgs/fifth.webp" alt="Fifth">
+                    </div>
+                    <div class="testimonial-author">
+                      <p class="testimonial-name" data-i18n="testimonialName4">Fifth</p>
+                      <p class="testimonial-role" data-i18n="testimonialRole4">Empearl</p>
+                    </div>
+                    <span class="testimonial-badge" data-i18n="testimonialVerified">Verificado</span>
+                  </div>
+                </article>
+
+                <article class="testimonial-card">
+                  <p class="testimonial-quote" data-i18n="testimonialQuote5">&quot;Muito obrigado Hugvo pelas sprites, ficaram incríveis. Você capturou exatamente o estilo que precisávamos e ainda superou as expectativas. Adorei o trabalho! Com certeza vou querer mais no futuro.&quot;</p>
+                  <div class="testimonial-meta">
+                    <div class="testimonial-avatar" aria-hidden="true">
+                      <img src="images/discord-imgs/jo%C3%A3opaulo.webp" alt="jpaulooli">
+                    </div>
+                    <div class="testimonial-author">
+                      <p class="testimonial-name" data-i18n="testimonialName5">jpaulooli</p>
+                      <p class="testimonial-role" data-i18n="testimonialRole5">MazeOT</p>
+                    </div>
+                    <span class="testimonial-badge" data-i18n="testimonialVerified">Verificado</span>
+                  </div>
+                </article>
+
+                <article class="testimonial-card">
+                  <p class="testimonial-quote" data-i18n="testimonialQuote6">&quot;Altamente recomendado. Definitivamente vale a pena conferir.&quot;</p>
+                  <div class="testimonial-meta">
+                    <div class="testimonial-avatar" aria-hidden="true">
+                      <img src="images/discord-imgs/aizen.webp" alt="A1Z3N">
+                    </div>
+                    <div class="testimonial-author">
+                      <p class="testimonial-name" data-i18n="testimonialName6">A1Z3N</p>
+                      <p class="testimonial-role" data-i18n="testimonialRole6">Blazera</p>
+                    </div>
+                    <span class="testimonial-badge" data-i18n="testimonialVerified">Verificado</span>
+                  </div>
+                </article>
+
+                <article class="testimonial-card">
+                  <p class="testimonial-quote" data-i18n="testimonialQuote7">&quot;Estou muito satisfeito com os serviços do Hugvo. Recomendo pela excelente abordagem em seguir a visão e prestar atenção nos detalhes. Um cara muito talentoso!&quot;</p>
+                  <div class="testimonial-meta">
+                    <div class="testimonial-avatar" aria-hidden="true">
+                      <img src="images/discord-imgs/mx.webp" alt="mx">
+                    </div>
+                    <div class="testimonial-author">
+                      <p class="testimonial-name" data-i18n="testimonialName7">mx</p>
+                      <p class="testimonial-role" data-i18n="testimonialRole7">Giterna</p>
+                    </div>
+                    <span class="testimonial-badge" data-i18n="testimonialVerified">Verificado</span>
+                  </div>
+                </article>
+
+                <article class="testimonial-card">
+                  <p class="testimonial-quote" data-i18n="testimonialQuote8">&quot;Estou extremamente satisfeito com o trabalho do Hugo. Foi entregue em tempo recorde e a qualidade é simplesmente incrível. Totalmente vale cada centavo. Ele criou uma mount e um outfit para o meu servidor e o resultado surpreendeu a todos — meus amigos, os jogadores, todo mundo adorou. Dá pra ver o quanto ele coloca habilidade e cuidado no que faz. Recomendo muito!&quot;</p>
+                  <div class="testimonial-meta">
+                    <div class="testimonial-avatar" aria-hidden="true">
+                      <img src="images/discord-imgs/junior.webp" alt="Sir Entao">
+                    </div>
+                    <div class="testimonial-author">
+                      <p class="testimonial-name" data-i18n="testimonialName8">Sir Entao</p>
+                      <p class="testimonial-role" data-i18n="testimonialRole8">TyronOT</p>
+                    </div>
+                    <span class="testimonial-badge" data-i18n="testimonialVerified">Verificado</span>
+                  </div>
+                </article>
+
+                <article class="testimonial-card">
+                  <p class="testimonial-quote" data-i18n="testimonialQuote9">&quot;O trabalho do Hugo é incrível, rápido e preciso. Já fiz duas compras e estou extremamente satisfeito com os resultados.&quot;</p>
+                  <div class="testimonial-meta">
+                    <div class="testimonial-avatar" aria-hidden="true">
+                      <img src="images/discord-imgs/balaozinhoGG.webp" alt="BalanzinhoGG">
+                    </div>
+                    <div class="testimonial-author">
+                      <p class="testimonial-name" data-i18n="testimonialName9">BalanzinhoGG</p>
+                      <p class="testimonial-role" data-i18n="testimonialRole9">LuminarisOT</p>
+                    </div>
+                    <span class="testimonial-badge" data-i18n="testimonialVerified">Verificado</span>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <button class="testimonials-nav testimonials-next" type="button" data-testimonials-next aria-label="Proximo" data-i18n-aria-label="testimonialsNextAria">
+              <span aria-hidden="true">&#10095;</span>
+            </button>
+          </div>
+
+          <div class="testimonials-dots" data-testimonials-dots></div>
+        </section>
+
+        <section class="section faq-section" id="faq">
+          <div class="section-header faq-header">
+            <p class="section-label" data-i18n="faqLabel">FAQ</p>
+            <div class="section-title-row">
+              <h3 class="faq-title" data-i18n="faqTitle">Perguntas Frequentes</h3>
+              <img src="images/faq-img.gif" alt="" aria-hidden="true" class="section-title-art faq-title-art" />
+            </div>
+            <p class="faq-subtitle" data-i18n="faqSubtitle">Tudo que você precisa saber sobre nossos produtos.</p>
+          </div>
+
+          <div class="faq-list">
+            <article class="faq-item">
+              <button class="faq-question" type="button">
+                <span data-i18n="faqQuestion1">Como funciona a contratacao?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <p data-i18n="faqAnswer1Line1"><strong>Processo de trabalho e pagamento</strong></p>
+                <p data-i18n="faqAnswer1Line2"><strong>Definição do pedido:</strong> Primeiramente, preciso levantar todas as informações necessárias para compreender exatamente o que o cliente deseja.</p>
+                <p data-i18n="faqAnswer1Line3"><strong>Pagamento inicial:</strong> Após estabelecermos o pedido, será necessário o pagamento antecipado de 50% do valor total acordado.</p>
+                <p data-i18n="faqAnswer1Line4"><strong>Prazo de entrega:</strong> Informarei um prazo médio para conclusão do trabalho.</p>
+                <p data-i18n="faqAnswer1Line5"><strong>Acompanhamento:</strong> Durante o progresso, enviarei prints do processo. Nesta etapa, o cliente poderá solicitar alterações sem custo adicional.</p>
+                <p data-i18n="faqAnswer1Line6"><strong>Finalização e entrega:</strong> Após a conclusão do trabalho, para que eu envie o material final, será necessário o pagamento do valor restante.</p>
+                <p data-i18n="faqAnswer1Line7"><strong>Formas de pagamento aceitas:</strong> Pix, Revolut, Wise, Criptomoedas (Binance)</p>
+              </div>
+            </article>
+
+            <article class="faq-item">
+              <button class="faq-question" type="button">
+                <span data-i18n="faqQuestion2">Faz sprites para todas versoes?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <p data-i18n="faqAnswer2Line1">Sim, crio sprites personalizados para todas as versoes do Tibia, adaptando fielmente ao estilo grafico de cada versao. Meu trabalho garante qualidade, coerencia estetica e fidelidade ao universo do jogo, seja em itens, criaturas, personagens ou efeitos visuais. O objetivo e entregar sprites que valorizem seu projeto, tornando-o mais imersivo e profissional.</p>
+              </div>
+            </article>
+
+            <article class="faq-item">
+              <button class="faq-question" type="button">
+                <span data-i18n="faqQuestion3">Como recebo meu trabalho?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <p data-i18n="faqAnswer3Line1"><strong>Meio de envio:</strong> O cliente recebera os arquivos pelo mesmo canal em que estivermos nos comunicando, seja Discord, WhatsApp ou Instagram.</p>
+                <p data-i18n="faqAnswer3Line2"><strong>Formato dos arquivos:</strong> Sprite Sheet completo ou frames separados individualmente, conforme sua preferencia.</p>
+                <p data-i18n="faqAnswer3Line3"><strong>Opcoes adicionais:</strong> Durante a comunicacao, podemos combinar para que eu ja forneca a sprite montada especificamente para sua versao, nos formatos OBD ou AEC, conforme acessibilidade e necessidade do projeto.</p>
+              </div>
+            </article>
+
+            <article class="faq-item">
+              <button class="faq-question" type="button">
+                <span data-i18n="faqQuestion4">Qual a politica de reembolso?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <p data-i18n="faqAnswer4Line1">Após a conclusão do trabalho e entrega dos arquivos, não há reembolso. Durante o processo, antes da finalização, alterações são realizadas sem custo adicional. Caso não esteja satisfeito antes do pagamento final, faremos ajustes até sua aprovação.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section contact-section" id="contact">
+          <div class="section-header">
+            <p class="section-label" data-i18n="contactLabel">Contato</p>
+            <div class="section-title-row">
+              <h3 class="contact-title" data-i18n="contactTitle">Vamos conversar</h3>
+              <img src="images/lets-talk.gif" alt="" aria-hidden="true" class="section-title-art contact-title-art" />
+            </div>
+          </div>
+          <p data-i18n="contactText">Para realizar um trabalho comigo, basta me chamar em qualquer rede. Estou pronto para começar o seu projeto e acrescentar ainda mais valor a ele.</p>
+          <div class="contact-actions">
+            <a href="https://wa.me/5511958857569?text=Ol%C3%A1%2C%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20sobre%20o%20seu%20trabalho" target="_blank" rel="noopener noreferrer" class="contact-btn contact-btn-whatsapp">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.52 3.48A11.86 11.86 0 0 0 12.08 0C5.47 0 .1 5.35.1 11.95c0 2.1.55 4.16 1.58 5.98L0 24l6.24-1.63a12 12 0 0 0 5.84 1.49h.01c6.6 0 11.97-5.35 11.97-11.95 0-3.19-1.25-6.19-3.54-8.43zM12.09 21.8h-.01a9.9 9.9 0 0 1-5.05-1.38l-.36-.22-3.71.97.99-3.61-.24-.37a9.86 9.86 0 0 1-1.52-5.26c0-5.46 4.45-9.9 9.92-9.9a9.84 9.84 0 0 1 7.03 2.9 9.8 9.8 0 0 1 2.89 7c0 5.46-4.45 9.9-9.94 9.9zm5.43-7.42c-.3-.15-1.77-.87-2.05-.97-.28-.1-.48-.15-.68.15s-.77.97-.94 1.16c-.17.2-.35.22-.64.07-.3-.15-1.24-.46-2.37-1.46a8.82 8.82 0 0 1-1.64-2.02c-.17-.3-.02-.46.13-.6.13-.13.3-.35.44-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.68-1.65-.93-2.26-.25-.6-.5-.52-.68-.53h-.58c-.2 0-.52.07-.8.37-.28.3-1.05 1.03-1.05 2.5s1.08 2.9 1.23 3.1c.15.2 2.1 3.2 5.08 4.5.7.3 1.25.47 1.67.6.7.22 1.33.19 1.83.11.56-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.18-1.42-.07-.12-.27-.2-.57-.35z"/>
+              </svg>
+              <span data-i18n="contactWhatsapp">WhatsApp</span>
+            </a>
+            <a href="https://www.instagram.com/hugvo.pixelart/" target="_blank" rel="noopener noreferrer" class="contact-btn contact-btn-instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.8A3.95 3.95 0 0 0 3.8 7.75v8.5a3.95 3.95 0 0 0 3.95 3.95h8.5a3.95 3.95 0 0 0 3.95-3.95v-8.5a3.95 3.95 0 0 0-3.95-3.95h-8.5z"/>
+                <path d="M12 7.2A4.8 4.8 0 1 1 7.2 12 4.81 4.81 0 0 1 12 7.2zm0 1.8A3 3 0 1 0 15 12a3 3 0 0 0-3-3z"/>
+                <circle cx="17.4" cy="6.6" r="1.2"/>
+              </svg>
+              <span data-i18n="contactInstagram">Instagram</span>
+            </a>
+            <a href="https://discord.gg/5VxXPV26aZ" target="_blank" rel="noopener noreferrer" class="contact-btn contact-btn-discord">
+              <img src="images/discord-logo.svg" alt="" aria-hidden="true" class="discord-logo-icon" />
+              <span data-i18n="contactDiscord">Discord</span>
+            </a>
+          </div>
+        </section>
+
+        <footer class="site-footer">
+          <div class="footer-content">
+            <p class="footer-label" data-i18n="footerLabel">Conecte-se</p>
+            <div class="social-links">
+              <a href="https://discord.gg/5VxXPV26aZ" target="_blank" rel="noopener noreferrer" aria-label="Discord" class="social-icon">
+                <img src="images/discord-logo.svg" alt="" aria-hidden="true" class="discord-logo-icon" />
+              </a>
+              <a href="https://www.instagram.com/hugvo.pixelart/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-icon">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.8A3.95 3.95 0 0 0 3.8 7.75v8.5a3.95 3.95 0 0 0 3.95 3.95h8.5a3.95 3.95 0 0 0 3.95-3.95v-8.5a3.95 3.95 0 0 0-3.95-3.95h-8.5z"/>
+                  <path d="M12 7.2A4.8 4.8 0 1 1 7.2 12 4.81 4.81 0 0 1 12 7.2zm0 1.8A3 3 0 1 0 15 12a3 3 0 0 0-3-3z"/>
+                  <circle cx="17.4" cy="6.6" r="1.2"/>
+                </svg>
+              </a>
+              <a href="https://wa.me/5511958857569?text=Ol%C3%A1%2C%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20sobre%20o%20seu%20trabalho" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="social-icon">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20.52 3.48A11.86 11.86 0 0 0 12.08 0C5.47 0 .1 5.35.1 11.95c0 2.1.55 4.16 1.58 5.98L0 24l6.24-1.63a12 12 0 0 0 5.84 1.49h.01c6.6 0 11.97-5.35 11.97-11.95 0-3.19-1.25-6.19-3.54-8.43zM12.09 21.8h-.01a9.9 9.9 0 0 1-5.05-1.38l-.36-.22-3.71.97.99-3.61-.24-.37a9.86 9.86 0 0 1-1.52-5.26c0-5.46 4.45-9.9 9.92-9.9a9.84 9.84 0 0 1 7.03 2.9 9.8 9.8 0 0 1 2.89 7c0 5.46-4.45 9.9-9.94 9.9zm5.43-7.42c-.3-.15-1.77-.87-2.05-.97-.28-.1-.48-.15-.68.15s-.77.97-.94 1.16c-.17.2-.35.22-.64.07-.3-.15-1.24-.46-2.37-1.46a8.82 8.82 0 0 1-1.64-2.02c-.17-.3-.02-.46.13-.6.13-.13.3-.35.44-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.68-1.65-.93-2.26-.25-.6-.5-.52-.68-.53h-.58c-.2 0-.52.07-.8.37-.28.3-1.05 1.03-1.05 2.5s1.08 2.9 1.23 3.1c.15.2 2.1 3.2 5.08 4.5.7.3 1.25.47 1.67.6.7.22 1.33.19 1.83.11.56-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.18-1.42-.07-.12-.27-.2-.57-.35z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </footer>
+      </main>
+    </div>
+  </div>
+  <script src="script.js?v=20260418-urgentfix"></script>
+</body>
+</html>
+
